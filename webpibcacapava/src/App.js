@@ -1,15 +1,21 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {BrowserRouter as Router , 
+  Routes, Route, Link
+} from "react-router-dom"
+import About from "./pages/about/index"
+import Home from "./pages/home/index"
+
 
 export default function App() {
   return (
-    <Stack direction="row" spacing={2}>
-      <Button><AccountCircleIcon/>Primary</Button>
-      <Button disabled>Disabled</Button>
-      <Button href="#text-buttons">Link</Button>
-    </Stack>
+
+    <Router>
+      <Routes>
+        <Route path='/' element= {<Home/> } />
+        <Route path='/about' element= {<About/> } />
+      </Routes>
+    </Router>
+   
   );
 }
 
