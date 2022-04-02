@@ -1,0 +1,14 @@
+nav{
+    background-color:rgb(182, 44, 44) ;
+    height: 50px;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-TOP: 5px;
+    justify-content: space-between;
+}
+
+
+
+
+
